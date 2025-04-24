@@ -1,0 +1,161 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/about.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="stylesheet" href="CSS/script.js"/>
+    <link rel="stylesheet" href="CSS/login.css"/>
+    <link rel="stylesheet" href="CSS/contact.css"/>
+    
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+
+    <!-- animation when scrolling -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/effeb5c9fd.js" crossorigin="anonymous"></script>
+    
+    
+    <title>Aston Stop About</title>
+  </head>
+  <body>
+    <div class="menu-bar">
+        <h1 class="logo">CV<span>Stop</span></h1>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="">Shop </a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="SignUP.html"> Register</a></li>
+          <li><a href="Login.html"> Login</a></li>
+           </div>
+
+    <!-- contact section start -->
+    <div class="container contact">
+        <div class="contact-wrap">
+            <div class="contact-address">
+                <div class="contact-title">
+                    <h1>Let's Connect!</h1>
+                    <p>Contact us for any type of support you need. From you orders to enqurining about certain products. We're here to help.</p>
+                </div>
+                <div class="contact-info">
+                    <div class="office-address">
+                        <h3><span class="icon-map-marked-alt"></span><strong>Address:</strong></h3>
+                        <p>Main Building, Aston University, Birmingham, B4 7ET</p>
+                    </div>
+
+                    <div class="contact-mail">
+                        <h3><span class="icon-envelope"></span><strong>Mail:</strong></h3>
+                        <p>support@astonstop.com</p>
+                    </div>
+                    <div class="contact-title">
+                    <h1>Find us here!</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Your full name" autocomplete="off" required>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="email" placeholder="Your email" autocomplete="off" required>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="number" placeholder="Phone number" autocomplete="off" required>
+                    </div>
+                    
+                    <div class="input-field">
+                        <input type="text" placeholder="Current university" autocomplete="off" required>
+                    </div>
+
+                    <div class="input-field">
+                        <select name="cars" id="cars" required>
+                            <option value="new">New Order</option>
+                            <option value="existing">Existing Order</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="textarea-field">
+                        <textarea name="textarea" id="textarea" placeholder="Your message" required></textarea>
+                    </div>
+
+                    <div class="button-field">
+                        <button th:href="@{/}"type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- contact section end -->
+ 
+    <!-- footer section start -->
+    <div class="footer">
+        <div class="footer-content container-xxl">
+            <div class="footer-col footer-col1">
+                <p class="astonstop"><strong>Aston<span>Stop</span></strong></p>
+                <p>With a focus on quality, affordablity and convienence. We have become a popular choice for students at Aston University and beyond. With a breadth of collections including men's, women's, kids, accessories and footwear. We should be your only option.</p>
+                <div class="social-links">
+                    <div class="social-link">
+                        <span class="icon-facebook-f"></span>
+                    </div>
+
+                    <div class="social-link">
+                        <span class="icon-twitter"></span>
+                    </div>
+
+                    <div class="social-link">
+                        <span class="icon-linkedin-in"></span>
+                    </div>
+
+                    <div class="social-link">
+                        <span class="icon-telegram-plane"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-col location">
+                <p class="footer-col-title"><strong>Find Us</strong></p>
+                <p>Main Building, Aston University</p>
+                <div class="address">
+                    <p><strong>Email: </strong><span>support@astonstop.com</span></p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="copyright container-xxl">
+            <p>Copyright &copy; 2023 - All Rights Reserved </p>
+        </footer>
+    </div>
+    <!-- footer section end -->
+
+
+    <!-- bootstrap cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <!-- aos cdn link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- custom js link -->
+    <script src="script.js"></script>
+
+  </body>
+</html>

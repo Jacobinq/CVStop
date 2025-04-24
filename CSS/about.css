@@ -1,0 +1,553 @@
+:root {
+  --color-primary: #0073ff;
+  --color-white: #e9e9e9;
+  --color-black: #141d28;
+  --color-black-1: #212b38;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  font-family: sans-serif;
+ 
+}
+
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+/* ----------Nav Bar CSS ---------- */
+.menu-bar {
+  background-color: var(--color-black);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+ 
+  /* RESPONISVENESS */
+@media (max-width: 100%) {
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 40px;
+  }
+}
+
+@media (min-width: 300px) {
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+/* ABOUT FROM THE OTHER SITE ----------------------------------------------------------------------------------------------------- */
+
+/* Fonts from Google */
+@import url('https://fonts.googleapis.com/css2 family=Acme&family=Lato:wght@300;400;700&display=swap');
+
+/* social icons */
+@import url('icon.css');
+
+@font-face {
+    font-family: BerlinSansFBDemiBold;
+    src: url(./fonts/BerlinSansFBDemiBold/BerlinSansFBDemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Berlin Sans FB';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Berlin Sans FB'), url('./fonts/BerlinSansFBWebfont/BRLNSR.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Berlin Sans FB Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Berlin Sans FB Bold'), url('./fonts/BerlinSansFBWebfont/BRLNSB.woff') format('woff');
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-base: #3184a5;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    color: #3184a5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3184a5;
+}
+
+a:active {
+    background: transparent !important;
+}
+
+.section-title h1 {
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: BerlinSansFBDemiBold;
+}
+
+.section-title h1 span {
+    color: var(--color-base);
+}
+
+.section-title p {
+    position: relative;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    font-family: 'Acme', sans-serif;
+}
+
+/* Header
+------------- */
+.header {
+    position: relative;
+    z-index: 999999 !important;
+}
+
+.header.active {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation: animate 0.4s ease forwards;
+    animation: animate 0.4s ease forwards;
+}
+
+@-webkit-keyframes animate {
+    from {
+        -webkit-transform: translateY(-10rem);
+        transform: translateY(-10rem);
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes animate {
+    from {
+        -webkit-transform: translateY(-10rem);
+        transform: translateY(-10rem);
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+/* navbar */
+.navbar {
+    background: lightblue;
+    border-bottom: 1px solid #ddd;
+    font-family: BerlinSansFBDemiBold;
+}
+
+.nav-content {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    padding-left: 5rem;
+}
+
+.navbar-brand img {
+    height: 7rem;
+    width: 10rem;
+}
+
+.nav-item .nav-link.active {
+    color: var(--color-base) !important;
+}
+
+.navbar .nav-item:hover .nav-link {
+    color: var(--color-base) !important;
+}
+
+.main-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.main-menu ul li {
+    padding: 0 0.6rem;
+}
+
+.main-menu ul li a {
+    color: #4c4855 !important;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    -webkit-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
+    transition: color 0.4s ease;
+}
+
+.nav-content .quote-btn {
+    position: absolute;
+    top: 1rem;
+    right: 6rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.nav-content .quote-btn a {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-base) !important;
+    border: 2px solid var(--color-base);
+}
+
+
+/* About 
+--------------- */
+.about {
+    padding: 5rem 0 2rem 0;
+    height: auto;
+    width: 100%;
+    font-family: 'Berlin Sans FB';
+}
+
+.about-wrap {
+    padding-bottom: 6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.about-image {
+    position: relative;
+    width: 45%;
+    height: 450px;
+}
+
+.about-image::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 0.2rem;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 0.2rem;
+}
+
+.about-description {
+    padding-top: 0.4rem;
+    width: 50%;
+    color: #333;
+}
+
+.about-description h3 {
+    font-size: 1.4rem;
+}
+
+.about-description h1 {
+    color: steelblue;
+    margin-top: 1.2rem;
+    font-size: 2.6rem;
+}
+
+.about-description p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.about-description button {
+    margin-top: 0.6rem;
+    color: #fff;
+    font-size: 1.2rem;
+    height: 2.6rem;
+    width: 8rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: steelblue;
+    border-radius: 0.1rem;
+}
+
+/* Customer review
+----------------------- */
+.customer-review {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background: -o-linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('img/about.png');
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('img/about.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Berlin Sans FB';
+}
+
+.review-title {
+    padding-top: 3rem;
+    font-family: BerlinSansFBDemiBold;
+}
+
+.review-title h1 {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 1px 1px 6px #333;
+}
+
+.review-title h1 span {
+    color: skyblue;
+}
+
+.review-wrap {
+    margin-top: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 82%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.review-box {
+    margin: 0 1.4rem;
+    padding: 2rem;
+    height: auto;
+    width: 600px;
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.review-icon {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+/* Footer 
+--------------- */
+.footer {
+    padding-top: 3rem;
+    background: #0f0d17;
+    font-family: 'Berlin Sans FB';
+}
+
+.footer-content {
+    padding-bottom: 2rem;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid #444;
+}
+
+.footer-col {
+    padding-right: 1rem;
+    width: 33%;
+}
+
+.footer-col1 {
+    width: 440px;
+    padding-bottom: 1rem;
+}
+
+.astonstop {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    /* text-transform: uppercase; */
+}
+
+.astonstop strong span {
+    color: #f0a62e;
+}
+
+.footer-col-title {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+.social-links {
+    margin-top: 1.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.social-link {
+    margin-right: 0.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 2.4rem;
+    width: 2.4rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.social-link>span {
+    font-size: 1.1rem;
+}
+
+.address>p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.address>p>strong {
+    width: 3.8rem;
+    color: #f0a62e;
+    letter-spacing: 1px;
+}
+
+.address>p>a {
+    color: #fff;
+}
+
+.copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.copyright p {
+    color: #fff;
+    margin: 0;
+}
+
+.copyright p a {
+    color: steelblue;
+}
