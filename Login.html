@@ -45,13 +45,13 @@
             <div class="form login">
                 <div class="form-content"> 
                     <header>Login</header>
-                   <form action="login_process.php" method="post">
+                   <form action="DBPHP/LoginConnetor.php" method="post">
                         <div class="field input-field">
                             <input name="email" type="email" placeholder="Email" class="input">
                         </div>
 
                         <div class="field input-field">
-                            <input name="password" type="password" placeholder="Password" class="password">
+                            <input name="password" type="password" placeholder="Password" class="input">
                             <i class='bx bx-hide eye-icon'></i>
                         </div>
                         <!-- <div th:if="${param.error}">
@@ -66,8 +66,8 @@
                         </div>
 
                         <div class="field button-field">
-                            <button>Login</button>
-                        </div>
+                        <button type="submit">Login</button>
+                    </div>
                     </form>
 
                     <div class="form-link">
