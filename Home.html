@@ -6,22 +6,21 @@
     <link rel="stylesheet" href="CSS/about.css" />
     <link rel="stylesheet" href="CSS/footer.css" />
 
-    <link rel="stylesheet" href="CSS/script.js"/>
  
-
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <!-- bootstrap -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     
-
-    <!-- animation when scrolling -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/effeb5c9fd.js" crossorigin="anonymous"></script>
     
     <title></title>
   </head>
@@ -31,7 +30,7 @@
       <ul>
         <li><a href="Home.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="">Shop </a></li>
+        <li><a href="Create.html">CV Creator </a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="SignUP.html"> Register</a></li>
         <li><a href="Login.html"> Login</a></li>
@@ -39,7 +38,7 @@
       </ul>
     </div>
   
-        <!-- Slideshow Carousel start -->
+    <!-- Slideshow Carousel start -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -54,52 +53,52 @@
             <div class="carousel-item carousel-item1 active">
                 <div class="carousel-caption d-block">
                     <h5 class="animate__animated animate__fadeInDown"
-                        style="animation-duration: 1.7s; animation-delay: 0.6s">We provide affordable & eco-friendly products
-                    </h5>
+                        style="animation-duration: 1.7s; animation-delay: 0.6s">Providing highest quality CV's and Cover Letters</h5>
                     <p class="animate__animated animate__fadeInDown"
                         style="animation-duration: 1.7s; animation-delay: 1.7s">
-                        <a th:href="@{/about}">Learn More</a>
+                        <a href="Login.html">Create Now!</a>
                     </p>
-
-    
-   
-    
-
-
-    <!-- service row start (accessories) -->
-    <div id="accessories" class="container-lg pt-4 pb-5" data-aos="fade-up" data-aos-duration="700">
-        <div class="service-row accessories-content pt-4 pb-4">
-            <div class="service-row-img">
-                <img src="img/hat.jpg" alt="">
+                </div>
             </div>
 
-            <div class="service-row-text accessories-text">
-                <h2>Clothing</h2>
-                <!-- <p>Our unique twist on a typical 'dad cap'. Embelished with our logo, our polo-style cap iis made from 100% cotton and comes in almost every colour!</p> -->
-                <p>From polo-styled caps to hoodies made from 100% cooton, embolished with our signature logo; we have every essentiasl piece of clothing you could possibly need on our site! We have our essentials available in every colour possible and in a range of sizes too.</p>
-                <p class="learn-more-btn"><a href="#">Learn more</a></p>
-            </div>
-        </div>
-    </div>
-    <!-- service row end -->
-
-
-    <!-- service row start (clothing) -->
-    <div id="clothing" class="container-lg pt-4 pb-5" data-aos="fade-up" data-aos-duration="700">
-        <div class="service-row clothing-content pt-4 pb-4">
-            <div class="service-row-img">
-                <img src="img/samsungcase.jpg" alt="">
+            <div class="carousel-item carousel-item2">
+                <div class="carousel-caption d-block">
+                    <h5 class="animate__animated animate__fadeInDown"
+                        style="animation-duration: 1.7s; animation-delay: 0.6s">For Computer Science Students</h5>
+                    <p class="animate__animated animate__fadeInDown"
+                        style="animation-duration: 1.7s; animation-delay: 1.7s">
+                        <a href="Login.html">Create Now!</a>
+                    </p>
+                </div>
             </div>
 
-            <div class="service-row-text clothing-text">
-                <h2>Accessories</h2>
-                <p>Need a phone case? Or a laptop cover to protect your new laptop? Or even some decorative canvas for your accomodation? Providing you with every accessory you could possibly need, we privide custom sizes for our phone cases to our watch bands!</p>
-                <p class="learn-more-btn"><a href="#">Learn more</a></p>
+            <div class="carousel-item carousel-item3">
+                <div class="carousel-caption d-block">
+                    <h5 class="animate__animated animate__fadeInDown"
+                        style="animation-duration: 1.7s; animation-delay: 0.6s">Giving you a chance at a better future</h5>
+                    <p class="animate__animated animate__fadeInDown"
+                        style="animation-duration: 1.7s; animation-delay: 1.7s">
+                        <a href="Login.html">Create Now!</a>
+                    </p>
+                </div>
             </div>
         </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    </div>
-    <!-- service row end -->
+    
+
+
 
 
 
@@ -108,12 +107,12 @@
 
 
  
-     <!-- footer section start -->
+    
     <div class="footer">
         <div class="footer-content container-xxl">
             <div class="footer-col footer-col1">
-                <p class="astonstop"><strong>Aston<span>Stop</span></strong></p>
-                <p>With a focus on quality, affordablity and convienence. We have become a popular choice for students at Aston University and beyond. With a breadth of collections including men's, women's, kids, accessories and footwear. We should be your only option.</p>
+                <p class="astonstop"><strong>CV<span>Stop</span></strong></p>
+                <p>With a focus on high quality CV's. CVStop The One Stop Shop For Everything CV's. Award Winning CV's and Cover Letters</p>
                 <div class="social-links">
                     <div class="social-link">
                         <span class="icon-facebook-f"></span>
@@ -135,30 +134,20 @@
 
             <div class="footer-col location">
                 <p class="footer-col-title"><strong>Find Us</strong></p>
-                <p>Main Building, Aston University</p>
+                <p>Solihull, Birmingham </p>
                 <div class="address">
-                    <p><strong>Email: </strong><span>support@astonstop.com</span></p>
+                    <p><strong>Email: </strong><span>support@CVStop.com</span></p>
+                </div>
+                <div class="PhoneNumber"></div>
+                    <p><strong>Phone Number: </strong><span>0121 4747474747</span></p>
                 </div>
             </div>
         </div>
 
         <footer class="copyright container-xxl">
-            <p>Copyright &copy; 2023 - All Rights Reserved </p>
+            <p>Copyright &copy; 2025 - All Rights Reserved </p>
         </footer>
     </div>
-    <!-- footer section end -->
- 
- 
-     <!-- bootstrap cdn link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-
-    <!-- aos cdn link -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- custom js link -->
-    <script src="script.js"></script>
 </li>
 </ul>
 
