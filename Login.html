@@ -45,7 +45,7 @@
             <div class="form login">
                 <div class="form-content"> 
                     <header>Login</header>
-                    <form th:action="@{/login}" method="post">
+                   <form action="login_process.php" method="post">
                         <div class="field input-field">
                             <input name="email" type="email" placeholder="Email" class="input">
                         </div>
@@ -54,15 +54,15 @@
                             <input name="password" type="password" placeholder="Password" class="password">
                             <i class='bx bx-hide eye-icon'></i>
                         </div>
-                        <div th:if="${param.error}">
+                        <!-- <div th:if="${param.error}">
                             Invalid username and password.
                         </div>
                         <div th:if="${param.logout}">
                             You have been logged out.
-                        </div>
+                        </div> -->
 
                         <div class="form-link">
-                            <buttom><a th:href="@{/forgot}" class="forgot-pass">Forgot password?</a> </buttom>
+                            <buttom><a href="" class="forgot-pass">Forgot password?</a> </buttom>
                         </div>
 
                         <div class="field button-field">
