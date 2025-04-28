@@ -1,0 +1,98 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>CVStop About</title>
+  </head>
+  <body>
+    <div class="menu-bar">
+        <h1 class="logo">CV<span>Stop</span></h1>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('create') }}">CV Creator</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </div>
+        </ul>
+      </div>
+ 
+  <div class="about container-xl" id="about">
+        <div class="about-wrap">
+            <div class="about-image">
+                <img src="Images/JobApplication.jpg" alt="curtains">
+            </div>
+            <div class="about-description">
+                <h3>Welcome to CV Stop</h3>
+                <h1>Award Winning and Reliable</h1>
+                <p>We at CV Stop provide the highest quality CV's and Cover Letters Driven by AI. As a university student I understand that the best CV is required to find a graduate job..</p>
+                <p>Founded in 2025, I saw a gap in the market to explore the use of AI and use it to the advantages</p>
+                <p>I saw University Students all over struggling to create a CV and Cover Letter. This</p>
+                <button>Contact Us </button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="customer-review">
+        <div class="review-title">
+            <h1><span>Customer</span> Review</h1>
+        </div>
+        <div class="review-wrap">
+            <div class="review-box">
+                <p class="review-icon"><span class="icon-quote-left"></span></p>
+                <p class="review-description">I was a final year university student struggling to get a graduate job. I turned to CV Stop to create me a CV which I could use to apply. The CV was high quality and had all of the information I needed to achieve the best job possible</p>
+                <p>- Jimbo James, 3nd Year Student at Birmingham University</p>
+            </div>
+
+            <div class="review-box">
+                <p class="review-icon"><span class="icon-quote-left"></span></p>
+                <p class="review-description">I was a 2nd year university student with no experience in writing CV's and Cover Letters. As part of my degree at Aston University I am required to do a placement and I required a CV to do this. I used CV stop to make a high quality CV and it was the best experience.</p>
+                <p>- Jacob Smith, 2st Year Student at Aston University</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+      
+      <div>
+        <h3 class="text-2xl font-bold text-white">CV<span class="text-indigo-500">Stop</span></h3>
+        <p class="mt-4 text-gray-400">With a focus on high-quality CVs. CVStop: The One Stop Shop for Everything CVs. Award-Winning CVs and Cover Letters!</p>
+        <div class="flex space-x-4 mt-6">
+          <a href="#" class="text-indigo-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-indigo-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-indigo-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="text-indigo-400 hover:text-white"><i class="fab fa-telegram-plane"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-semibold text-white mb-4">Find Us</h4>
+        <p class="text-gray-400">Solihull, Birmingham</p>
+        <p class="mt-2 text-gray-400"><strong>Email:</strong> support@CVStop.com</p>
+        <p class="mt-2 text-gray-400"><strong>Phone:</strong> 0121 4747474747</p>
+      </div>
+
+    </div>
+
+    <div class="mt-12 text-center text-gray-500 text-sm">
+      &copy; 2025 - All Rights Reserved
+    </div>
+  </footer>
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

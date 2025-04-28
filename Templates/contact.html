@@ -5,9 +5,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
-    
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <title>CVStop Contact Us</title>
   </head>
@@ -15,13 +14,11 @@
     <div class="menu-bar">
         <h1 class="logo">CV<span>Stop</span></h1>
         <ul>
-          <li><a href="Home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="Create.html">CV Creator </a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="SignUP.html"> Register</a></li>
-          <li><a href="Login.html"> Login</a></li>
-           </div>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('create') }}">CV Creator</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </div>
 
     <!-- contact section start -->
     <div class="container contact">
@@ -85,48 +82,37 @@
         </div>
     </div>
   
-    <div class="footer">
-        <div class="footer-content container-xxl">
-            <div class="footer-col footer-col1">
-                <p class="astonstop"><strong>CV<span>Stop</span></strong></p>
-                <p>With a focus on high quality CV's. CVStop The One Stop Shop For Everything CV's. Award Winning CV's and Cover Letters</p>
-                <div class="social-links">
-                    <div class="social-link">
-                        <span class="icon-facebook-f"></span>
-                    </div>
-
-                    <div class="social-link">
-                        <span class="icon-twitter"></span>
-                    </div>
-
-                    <div class="social-link">
-                        <span class="icon-linkedin-in"></span>
-                    </div>
-
-                    <div class="social-link">
-                        <span class="icon-telegram-plane"></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-col location">
-                <p class="footer-col-title"><strong>Find Us</strong></p>
-                <p>Solihull, Birmingham </p>
-                <div class="address">
-                    <p><strong>Email: </strong><span>support@CVStop.com</span></p>
-                </div>
-                <div class="PhoneNumber"></div>
-                    <p><strong>Phone Number: </strong><span>0121 4747474747</span></p>
-                </div>
-            </div>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+      
+      <div>
+        <h3 class="text-2xl font-bold text-white">CV<span class="text-indigo-500">Stop</span></h3>
+        <p class="mt-4 text-gray-400">With a focus on high-quality CVs. CVStop: The One Stop Shop for Everything CVs. Award-Winning CVs and Cover Letters!</p>
+        <div class="flex space-x-4 mt-6">
+          <a href="#" class="text-indigo-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-indigo-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-indigo-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="text-indigo-400 hover:text-white"><i class="fab fa-telegram-plane"></i></a>
         </div>
+      </div>
 
-        <footer class="copyright container-xxl">
-            <p>Copyright &copy; 2025 - All Rights Reserved </p>
-        </footer>
+      <div>
+        <h4 class="text-xl font-semibold text-white mb-4">Find Us</h4>
+        <p class="text-gray-400">Solihull, Birmingham</p>
+        <p class="mt-2 text-gray-400"><strong>Email:</strong> support@CVStop.com</p>
+        <p class="mt-2 text-gray-400"><strong>Phone:</strong> 0121 4747474747</p>
+      </div>
+
     </div>
 
+    <div class="mt-12 text-center text-gray-500 text-sm">
+      &copy; 2025 - All Rights Reserved
+    </div>
+  </footer>
 
-  
-  </body>
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
 </html>
