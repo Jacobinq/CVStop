@@ -5,7 +5,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Contact Us Page*/
 .contact {
     padding: 5rem 0;
 }
@@ -96,9 +95,6 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-input[type=number] {
-    -moz-appearance: textfield;
-}
 
 .contact-form .textarea-field {
     height: 220px;

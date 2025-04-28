@@ -5,11 +5,6 @@
   --color-black-1: #212b38;
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
 
 body {
   font-family: sans-serif;
@@ -25,7 +20,6 @@ body {
   color: var(--color-primary);
 }
 
-/* ----------Nav Bar CSS ---------- */
 .menu-bar {
   background-color: var(--color-black);
   height: 80px;
@@ -44,9 +38,7 @@ body {
 }
 
 .menu-bar ul li {
-  /* width: 120px; */
   padding: 10px 30px;
-  /* text-align: center; */
 
   position: relative;
 }
@@ -70,7 +62,6 @@ body {
 }
 
  
-  /* RESPONISVENESS */
 @media (max-width: 100%) {
   .about {
     display: flex;
@@ -96,34 +87,7 @@ body {
 }
 
 
-/* ABOUT FROM THE OTHER SITE ----------------------------------------------------------------------------------------------------- */
 
-/* Fonts from Google */
-@import url('https://fonts.googleapis.com/css2 family=Acme&family=Lato:wght@300;400;700&display=swap');
-
-/* social icons */
-@import url('icon.css');
-
-@font-face {
-    font-family: BerlinSansFBDemiBold;
-    src: url(./fonts/BerlinSansFBDemiBold/BerlinSansFBDemiBold.ttf);
-}
-
-@font-face {
-    font-family: 'Berlin Sans FB';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Berlin Sans FB'), url('./fonts/BerlinSansFBWebfont/BRLNSR.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Berlin Sans FB Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Berlin Sans FB Bold'), url('./fonts/BerlinSansFBWebfont/BRLNSB.woff') format('woff');
-}
-
-*,
 *::before,
 *::after {
     margin: 0;
@@ -180,8 +144,7 @@ a:active {
     font-family: 'Acme', sans-serif;
 }
 
-/* Header
-------------- */
+
 .header {
     position: relative;
     z-index: 999999 !important;
