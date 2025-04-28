@@ -1,0 +1,117 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+
+
+    <title>CVStop Contact Us</title>
+  </head>
+  <body>
+    <div class="menu-bar">
+        <h1 class="logo">CV<span>Stop</span></h1>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Create.html">CV Creator </a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="SignUP.html"> Register</a></li>
+          <li><a href="Login.html"> Login</a></li>
+           </div>
+
+        
+            <div class="contact-form">
+                <form action="/generate_cv" method="POST">
+                    <label for="name">Name:</label>
+                    <div class="input-field">
+                    <input type="text" id="name" name="name" required><br><br>
+                    </div>
+                    <div class="input-field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    </div>
+                    <div class="textarea-field">
+                    <label for="CareerObjective ">Career Objective:</label>
+                    <textarea type="text" id="CareerObjective" name="CareerObjective" required></textarea><br><br>
+                    </div>
+                    <div class="textarea-field">
+                    <label for="WorkExperience">Work Experience:</label>
+                    <textarea type="text" id="WorkExperience" name="WorkExperience" required></textarea><br><br>
+                    </div>
+                    <div class="textarea-field">
+                    <label for="skills">Skills (comma separated):</label>
+                    <textarea type="text" id="skills" name="skills" required></textarea><br><br>
+                    </div>
+                    <div class="textarea-field">
+                    <label for="Education">Education & Qualifications:</label>
+                    <textarea type="text" id="Education" name="Education" required></textarea><br><br>
+                    </div>
+                    <div class="textarea-field">
+                    <label for="ProblemSolving">Problem Solving:</label>
+                    <textarea type="text" id="ProblemSolving" name="ProblemSolving" required></textarea><br><br>
+                    </div>
+                    <div class="textarea-field">
+                    <label for="TechnicalSkills">Technical Skills:</label>
+                    <textarea type="text" id="TechnicalSkills" name="TechnicalSkills" required></textarea><br><br>
+                    </div>
+                    <div class="textarea-field">
+                    <label for="Achievements">Achievements:</label>
+                    <textarea type="text" id="Achievements" name="Achievements" required></textarea><br><br>
+                    </div>
+                    <div class="button-field">
+                    <button type="submit">Generate CV</button>
+                </div>
+                </form>
+            </div>
+        </form>
+    
+  
+    <div class="footer">
+        <div class="footer-content container-xxl">
+            <div class="footer-col footer-col1">
+                <p class="astonstop"><strong>CV<span>Stop</span></strong></p>
+                <p>With a focus on high quality CV's. CVStop The One Stop Shop For Everything CV's. Award Winning CV's and Cover Letters</p>
+                <div class="social-links">
+                    <div class="social-link">
+                        <span class="icon-facebook-f"></span>
+                    </div>
+
+                    <div class="social-link">
+                        <span class="icon-twitter"></span>
+                    </div>
+
+                    <div class="social-link">
+                        <span class="icon-linkedin-in"></span>
+                    </div>
+
+                    <div class="social-link">
+                        <span class="icon-telegram-plane"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-col location">
+                <p class="footer-col-title"><strong>Find Us</strong></p>
+                <p>Solihull, Birmingham </p>
+                <div class="address">
+                    <p><strong>Email: </strong><span>support@CVStop.com</span></p>
+                </div>
+                <div class="PhoneNumber"></div>
+                    <p><strong>Phone Number: </strong><span>0121 4747474747</span></p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="copyright container-xxl">
+            <p>Copyright &copy; 2025 - All Rights Reserved </p>
+        </footer>
+    </div>
+
+
+  
+  </body>
+</html>
